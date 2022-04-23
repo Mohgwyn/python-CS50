@@ -2,8 +2,9 @@ x = input("Expression: ")
 
 x, y, z = x.split(" ")
 
-x = int(x)
-z = int(z)
+#we have to use floats to get the appropriate result
+x = float(x)
+z = float(z)
 
 if y == "+":
     r = x + z
