@@ -14,9 +14,9 @@ def enter_coin(price, paid):
 def machine(price):
     paid = 0
     while paid < price:
-        coin = enter_coin()
+        print(f"Amount due: {price-paid}")
+        coin = enter_coin(price, paid)
         paid += coin
-        print(f"Amount due: {paid}")
     return paid - price
 
 if __name__ == "__main__":
