@@ -3,13 +3,13 @@ def main(price):
     print(f"Change owed: {change}")
      
 
-def enter_coin():
+def enter_coin(price, paid):
     while True:
         n = int(input("Enter a coin: "))
         if n == 25 or n == 10 or n == 5:
             return n
         else:
-            print("That's not a valid coin.")
+            print(f"That's not a valid coin. Amount due: {price-paid}")
 
 def machine(price):
     paid = 0
